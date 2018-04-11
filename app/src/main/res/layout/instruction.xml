@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ttt2"
+    android:orientation="vertical"
+    tools:context="com.example.android.tictactoe2.OptionsActivity.InstructionActivity">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="420dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#cbedd9d9"
+        android:orientation="vertical">
+
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/tic1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:elevation="5dp"
+            android:fitsSystemWindows="true"
+            android:text="@string/game_instructions"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_color_instruction"
+            android:textSize="@dimen/textsize_instruction"
+            tools:targetApi="lollipop" />
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/tic2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fitsSystemWindows="true"
+            android:text="@string/game_instructions1"
+            android:textColor="@color/text_color_instruction"
+            android:textSize="@dimen/textsize_instruction" />
+    </LinearLayout>
+</LinearLayout>

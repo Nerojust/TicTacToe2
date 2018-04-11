@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BoardType.ThreeBoardActivity">
+    <item
+        android:id="@+id/three_boards"
+        android:orderInCategory="1"
+        android:title="@string/three_boards"
+        app:showAsAction="ifRoom"
+        tools:targetApi="o" />
+    <item
+        android:id="@+id/five_boards"
+        android:orderInCategory="1"
+        android:title="@string/five_boards"
+        app:showAsAction="ifRoom"
+        tools:targetApi="o" />
+    <item
+        android:id="@+id/resetMenu"
+        android:orderInCategory="1"
+        android:contentDescription="@string/app_name"
+        android:title="@string/reset_game"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/instructions"
+        android:orderInCategory="2"
+        android:icon="@color/colorPrimary"
+        android:title="@string/instruction"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/aboutUs"
+        android:orderInCategory="3"
+        android:title="@string/about_us_menu"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/exit"
+        android:orderInCategory="4"
+        android:title="@string/exit"
+        app:showAsAction="never"/>
+</menu>

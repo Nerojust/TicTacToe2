@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d454ed</color>
+    <color name="colorPrimaryDark">#1b1d29</color>
+    <color name="colorAccent">#83917c</color>
+    <color name="viewcolor">#a76060</color>
+    <color name="take_a_climb_challenge">#772c5c4e</color>
+    <color name="version_color">#1b1918</color>
+    <color name="toe">#e61a17</color>
+    <color name="tac">#0e0e0e</color>
+    <color name="tic">#5a75cc</color>
+    <color name="alc">#0f0843</color>
+    <color name="information_color">#284d04</color>
+    <color name="view_line_color">#244d7b</color>
+    <color name="take_a_climb_aboutUs">#036769</color>
+    <color name="my_name_aboutus">#0e0d0d</color>
+    <color name="alc_lagos_nigeria_aboutus">#532a2a</color>
+    <color name="text_color_instruction">#1f2020</color>
+</resources>

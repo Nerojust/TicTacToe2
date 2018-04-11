@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tic">50sp</dimen>
+    <dimen name="tac">30sp</dimen>
+    <dimen name="textSize_aboutus_details">16sp</dimen>
+    <dimen name="general_button_button_size">60sp</dimen>
+    <dimen name="textsize_instruction">16sp</dimen>
+    <dimen name="text_size_splash_screen">16sp</dimen>
+    <dimen name="player_text_draw_size">16sp</dimen>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.android.tictactoe2.Splashscreen.SplashScreen">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/tictactoe"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:contentDescription="@string/tictactoe_image_splashscreen"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ttt3"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/tic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tac"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_toLeftOf="@+id/tac"
+        android:layout_toStartOf="@+id/tac"
+        android:text="@string/tic"
+        android:textColor="@color/tic"
+        android:textSize="@dimen/tic"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_below="@+id/tictactoe"
+        android:layout_marginTop="14dp"
+        android:text="@string/tac"
+        android:textColor="@color/tac"
+        android:textSize="@dimen/tac"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/toe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tac"
+        android:layout_toEndOf="@+id/tac"
+        android:layout_toRightOf="@+id/tac"
+        android:text="@string/toe"
+        android:textColor="@color/toe"
+        android:textSize="@dimen/tic"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toLeftOf="@+id/tic"
+        android:layout_toStartOf="@+id/tic"
+        android:text="@string/alc"
+        android:textColor="@color/alc"
+        android:textSize="@dimen/text_size_splash_screen" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/toe"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:contentDescription="@string/ladder_description"
+        android:src="@drawable/ladder2"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/toe"
+        android:layout_alignRight="@+id/toe"
+        android:layout_below="@+id/tic"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="casual"
+        android:text="@string/take_a_climb_challenge"
+        android:textColor="@color/take_a_climb_challenge"
+        android:textSize="@dimen/text_size_splash_screen"
+        tools:targetApi="jelly_bean" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="@string/version"
+        android:textColor="@color/version_color"
+        android:textSize="@dimen/text_size_splash_screen"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
