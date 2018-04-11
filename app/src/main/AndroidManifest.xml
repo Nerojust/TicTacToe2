@@ -25,8 +25,9 @@
         <activity android:name=".OptionsActivity.AboutUs" />
         <activity android:name=".OptionsActivity.InstructionActivity" />
         <activity android:name=".OptionsActivity.PlayerMode" />
-        <activity android:name=".OptionsActivity.NameActivity_2player"></activity>
+        <activity android:name=".OptionsActivity.NameThreeBoard"></activity>
         <activity android:name=".OptionsActivity.AppsByNero" />
+        <activity android:name=".OptionsActivity.NameFiveBoard" />
     </application>
 
 </manifest>

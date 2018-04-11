@@ -37,7 +37,7 @@ public class AppsByNero extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://github.com/Nerojust/NerosPizzaApp"));
+                intent.setData(Uri.parse("https://drive.google.com/file/d/13KGuIgfr4zlkmDVZjOTxOcXOv9rmlBqF/view?usp=sharing"));
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
                 }
@@ -47,7 +47,11 @@ public class AppsByNero extends AppCompatActivity {
         local_news.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://drive.google.com/file/d/1cdsvHmEzl6fSzgP3JixaEYIDYec_BD0a/view?usp=sharing"));
+                if (intent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(intent);
+                }
             }
         });
 

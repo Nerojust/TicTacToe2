@@ -39,7 +39,7 @@ public class PlayerMode extends AppCompatActivity {
                 builder.setCancelable(true);
                 builder.setNegativeButton("5*3 board type", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(PlayerMode.this, NameActivity_2player.class);
+                        Intent intent = new Intent(PlayerMode.this, NameFiveBoard.class);
                         startActivity(intent);
 
                     }
@@ -48,7 +48,7 @@ public class PlayerMode extends AppCompatActivity {
                 builder.setNeutralButton("3*3 Board type", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Intent intent = new Intent(PlayerMode.this, NameActivity_2player.class);
+                        Intent intent = new Intent(PlayerMode.this, NameThreeBoard.class);
                         startActivity(intent);
                     }
                 });
@@ -66,7 +66,7 @@ public class PlayerMode extends AppCompatActivity {
                 builder.setCancelable(true);
                 builder.setNegativeButton("5*3 board type", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(PlayerMode.this, NameActivity_2player.class);
+                        Intent intent = new Intent(PlayerMode.this, NameFiveBoard.class);
                         startActivity(intent);
 
                     }
@@ -75,7 +75,7 @@ public class PlayerMode extends AppCompatActivity {
                 builder.setNeutralButton("3*3 Board type", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Intent intent = new Intent(PlayerMode.this, NameActivity_2player.class);
+                        Intent intent = new Intent(PlayerMode.this, NameThreeBoard.class);
                         startActivity(intent);
                     }
                 });
