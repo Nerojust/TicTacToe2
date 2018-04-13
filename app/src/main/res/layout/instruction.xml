@@ -28,6 +28,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@color/text_color_instruction"
             android:textSize="@dimen/textsize_instruction"
+            tools:ignore="RtlHardcoded"
             tools:targetApi="lollipop" />
 
         <me.biubiubiu.justifytext.library.JustifyTextView
@@ -39,6 +40,7 @@
             android:fitsSystemWindows="true"
             android:text="@string/game_instructions1"
             android:textColor="@color/text_color_instruction"
-            android:textSize="@dimen/textsize_instruction" />
+            android:textSize="@dimen/textsize_instruction"
+            tools:ignore="RtlHardcoded" />
     </LinearLayout>
 </LinearLayout>

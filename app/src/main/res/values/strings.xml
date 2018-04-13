@@ -8,7 +8,6 @@
     <string name="about_us2">ALC 2.0, Lagos State, Nigeria.</string>
     <string name="about_us3">nerojust4@gmail.com </string>
     <string name="about_us6">@Nerojust</string>
-    <string name="about_us7">@Nerojust</string>
     <string name="about_us8">@Nero_sax</string>
     <string name="about_us9">@Nerosax</string>
     <string name="about_us4">+234 8069 809921</string>
@@ -19,10 +18,8 @@
     <string name="game_instructions1">Tic-tac-toe (also known as noughts and crosses or Xs and Os) is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 or a 3×5 grid.
         The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.</string>
     <string name="aboutUs">About Us</string>
-    <string name="instructions">Instructions</string>
+    <string name="instructions">Game Instructions</string>
     <string name="other_apps_by_nerojust">Other Apps by Nerojust</string>
-    <string name="exit_menu">Exit</string>
-    <string name="ultimate_cup_challenge">Ultimate Cup Challenge</string>
     <string name="player_mode">Player Mode</string>
     <string name="alc">ALC 2.0</string>
     <string name="take_a_climb_challenge">Take a Climb Challenge</string>
@@ -33,7 +30,7 @@
     <string name="ladder_description">mimicking climbing a ladder</string>
     <string name="tictactoe_image_splashscreen">TicTacToe image at splashscreen startup</string>
     <string name="my_picture_at_demo">Image of myself during presentation at Andela ALC 2.0</string>
-    <string name="player_O">Player O: 0</string>
+    <string name="player_O">PlayerO: 0</string>
     <string name="draw">Draw: O</string>
     <string name="player_X">PlayerX: O</string>
     <string name="reset">reset</string>
@@ -47,8 +44,6 @@
     <string name="instruction">Instruction</string>
     <string name="about_us_menu">About Us</string>
     <string name="play">PLAY</string>
-    <string name="enter_player_1_name">Enter Player Name</string>
-    <string name="enter_player_2_name">Enter Player Name</string>
     <string name="pizza_app">Pizza App</string>
     <string name="local_news_app">Local News App</string>
     <string name="music_app">Music App</string>
@@ -56,4 +51,8 @@
     <string name="miwok_app">Miwok App</string>
     <string name="earthquake_app">Earthquake_app</string>
     <string name="world_news_app">World News App</string>
+    <string name="enter_player_two_name">Enter Player Two name</string>
+    <string name="enter_player_one_name">Enter Player One name</string>
+    <string name="name_playerX">Enter Player X name</string>
+    <string name="enter_player_o_name">Enter Player O name</string>
 </resources>

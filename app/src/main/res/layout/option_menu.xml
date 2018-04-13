@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/generallayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ttt2"
     android:orientation="vertical"
-    android:id="@+id/generallayout"
     tools:context="com.example.android.tictactoe2.OptionsActivity.OptionMenu"
     tools:ignore="Overdraw">
 
@@ -18,13 +18,6 @@
             android:layout_marginTop="41dp"
             android:text="@string/player_mode"/>
 
-        <Button
-            android:id="@+id/premiumChallenge"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="51dp"
-            android:text="@string/ultimate_cup_challenge" />
 
         <Button
             android:id="@+id/instructionsOptionMenu"

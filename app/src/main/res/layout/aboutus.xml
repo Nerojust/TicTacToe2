@@ -33,7 +33,6 @@
                 android:id="@+id/designedBy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:fontFamily="cursive"
                 android:gravity="center"
                 android:text="@string/about_us"
@@ -90,176 +89,180 @@
                 android:layout_marginTop="10dp"
                 android:background="@color/view_line_color" />
 
-
-            <TextView
-                android:id="@+id/email"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:drawableLeft="@drawable/emailimage"
-                android:drawablePadding="10dp"
-                android:fontFamily="sans-serif-condensed"
-                android:text="@string/about_us3"
-                android:textColor="@color/information_color"
-                android:textSize="16sp"
-                tools:targetApi="jelly_bean" />
-
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:id="@+id/phoneWhatsapp"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_alignTop="@+id/phoneWhatsappText"
-                    android:layout_toLeftOf="@+id/phoneWhatsappText"
-                    android:layout_toStartOf="@+id/phoneWhatsappText"
-                    android:src="@drawable/whatsapp"
-                    android:contentDescription="TODO"
-                    tools:ignore="ContentDescription,HardcodedText" />
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/phoneWhatsappText"
+                    android:id="@+id/email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
                     android:layout_gravity="center"
-                    android:drawablePadding="1dp"
-                    android:drawableLeft="@drawable/phoneimage"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="@string/about_us4"
-                    android:textColor="@color/information_color"
-                    android:textSize="@dimen/textSize_aboutus_details"
-                    tools:ignore="RelativeOverlap,RtlHardcoded"
-                    tools:targetApi="jelly_bean" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:id="@+id/slack"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_alignTop="@+id/slackTExt"
-                    android:layout_toLeftOf="@+id/slackTExt"
-                    android:layout_toStartOf="@+id/slackTExt"
-                    android:src="@drawable/slack"
-                    android:contentDescription="TODO"
-                    tools:ignore="ContentDescription,HardcodedText" />
-
-                <TextView
-                    android:id="@+id/slackTExt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/emailimage"
                     android:drawablePadding="10dp"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="@string/about_us6"
-                    android:textColor="#284d04"
+                    android:text="@string/about_us3"
+                    android:textColor="@color/information_color"
                     android:textSize="16sp"
-                    tools:ignore="RelativeOverlap,RtlHardcoded"
+                    tools:ignore="RtlHardcoded"
                     tools:targetApi="jelly_bean" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_marginTop="3dp"
-                android:layout_height="wrap_content">
 
-                <ImageView
-                    android:id="@+id/instagram"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_alignTop="@+id/instagram_text"
-                    android:layout_toLeftOf="@+id/instagram_text"
-                    android:layout_toStartOf="@+id/instagram_text"
-                    android:src="@drawable/instagram"
-                    android:contentDescription="@string/my_picture_at_demo"
-                    tools:ignore="ContentDescription,HardcodedText" />
 
-                <TextView
-                    android:id="@+id/instagram_text"
-                    android:layout_width="wrap_content"
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignTop="@+id/phoneWhatsappText"
+                        android:layout_toLeftOf="@+id/phoneWhatsappText"
+                        android:layout_toStartOf="@+id/phoneWhatsappText"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/whatsapp"
+                        tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/phoneWhatsappText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/phoneimage"
+                        android:drawablePadding="1dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/about_us4"
+                        android:textColor="@color/information_color"
+                        android:textSize="@dimen/textSize_aboutus_details"
+                        tools:ignore="RelativeOverlap,RtlHardcoded"
+                        tools:targetApi="jelly_bean" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignTop="@+id/slackTExt"
+                        android:layout_toLeftOf="@+id/slackTExt"
+                        android:layout_toStartOf="@+id/slackTExt"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/slack"
+                        tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/slackTExt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/about_us6"
+                        android:textColor="#284d04"
+                        android:textSize="16sp"
+                        tools:ignore="RelativeOverlap,RtlHardcoded"
+                        tools:targetApi="jelly_bean" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_gravity="center"
-                    android:drawablePadding="10dp"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="@string/about_us8"
-                    android:textColor="@color/information_color"
-                    android:textSize="@dimen/textSize_aboutus_details"
-                    tools:ignore="RelativeOverlap,RtlHardcoded"
-                    tools:targetApi="jelly_bean" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_marginTop="5dp"
-                android:layout_height="wrap_content">
+                    android:layout_marginTop="3dp">
 
-                <ImageView
-                    android:id="@+id/facebook"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_alignTop="@+id/facebookText"
-                    android:layout_toLeftOf="@+id/facebookText"
-                    android:layout_toStartOf="@+id/facebookText"
-                    android:src="@drawable/facebook"
-                    android:contentDescription="TODO"
-                    tools:ignore="ContentDescription,HardcodedText" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignTop="@+id/instagram_text"
+                        android:layout_toLeftOf="@+id/instagram_text"
+                        android:layout_toStartOf="@+id/instagram_text"
+                        android:contentDescription="@string/my_picture_at_demo"
+                        android:src="@drawable/instagram"
+                        tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
 
-                <TextView
-                    android:id="@+id/facebookText"
-                    android:layout_width="wrap_content"
+                    <TextView
+                        android:id="@+id/instagram_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/about_us8"
+                        android:textColor="@color/information_color"
+                        android:textSize="@dimen/textSize_aboutus_details"
+                        tools:ignore="RelativeOverlap,RtlHardcoded"
+                        tools:targetApi="jelly_bean" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_gravity="center"
-                    android:drawablePadding="10dp"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="@string/about_us9"
-                    android:textColor="@color/information_color"
-                    android:textSize="@dimen/textSize_aboutus_details"
-                    tools:ignore="RelativeOverlap,RtlHardcoded"
-                    tools:targetApi="jelly_bean" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    android:layout_marginTop="5dp">
 
-                <ImageView
-                    android:id="@+id/twitter"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_alignTop="@+id/twitter_text"
-                    android:layout_toLeftOf="@+id/twitter_text"
-                    android:layout_toStartOf="@+id/twitter_text"
-                    android:src="@drawable/twitter"
-                    android:contentDescription="TODO"
-                    tools:ignore="ContentDescription,HardcodedText" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignTop="@+id/facebookText"
+                        android:layout_toLeftOf="@+id/facebookText"
+                        android:layout_toStartOf="@+id/facebookText"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/facebook"
+                        tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
 
-                <TextView
-                    android:id="@+id/twitter_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_gravity="center"
-                    android:drawablePadding="10dp"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="@string/about_us6"
-                    android:textColor="@color/information_color"
-                    android:textSize="@dimen/textSize_aboutus_details"
-                    tools:ignore="RelativeOverlap,RtlHardcoded"
-                    tools:targetApi="jelly_bean" />
-            </RelativeLayout>
+                    <TextView
+                        android:id="@+id/facebookText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/about_us9"
+                        android:textColor="@color/information_color"
+                        android:textSize="@dimen/textSize_aboutus_details"
+                        tools:ignore="RelativeOverlap,RtlHardcoded"
+                        tools:targetApi="jelly_bean" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignTop="@+id/twitter_text"
+                        android:layout_toLeftOf="@+id/twitter_text"
+                        android:layout_toStartOf="@+id/twitter_text"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/twitter"
+                        tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/twitter_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/about_us6"
+                        android:textColor="@color/information_color"
+                        android:textSize="@dimen/textSize_aboutus_details"
+                        tools:ignore="RelativeOverlap,RtlHardcoded"
+                        tools:targetApi="jelly_bean" />
+                </RelativeLayout>
+            </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>

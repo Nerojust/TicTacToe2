@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="130dp"
-        android:background="@drawable/ttt"
+        android:background="@drawable/ttt2"
         android:orientation="vertical">
 
     </LinearLayout>
@@ -41,8 +41,8 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/buttonstyle2"
                 android:layout_marginTop="51dp"
+                android:background="@drawable/buttonstyle2"
                 android:text="@string/local_news_app" />
 
             <Button
@@ -50,8 +50,8 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/buttonstyle2"
                 android:layout_marginTop="51dp"
+                android:background="@drawable/buttonstyle2"
                 android:text="@string/world_news_app" />
 
             <Button
@@ -59,8 +59,8 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/buttonstyle2"
                 android:layout_marginTop="51dp"
+                android:background="@drawable/buttonstyle2"
                 android:text="@string/earthquake_app" />
 
             <Button
@@ -68,8 +68,8 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/buttonstyle2"
                 android:layout_marginTop="51dp"
+                android:background="@drawable/buttonstyle2"
                 android:text="@string/music_app" />
 
             <Button
@@ -77,8 +77,8 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/buttonstyle2"
                 android:layout_marginTop="51dp"
+                android:background="@drawable/buttonstyle2"
                 android:text="@string/movie_app" />
 
             <Button
@@ -86,9 +86,9 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/buttonstyle2"
-                android:layout_marginTop="51dp"
                 android:layout_marginBottom="30dp"
+                android:layout_marginTop="51dp"
+                android:background="@drawable/buttonstyle2"
                 android:text="@string/miwok_app" />
         </LinearLayout>
     </ScrollView>

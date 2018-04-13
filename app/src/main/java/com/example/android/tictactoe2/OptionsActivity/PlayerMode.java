@@ -1,23 +1,32 @@
 package com.example.android.tictactoe2.OptionsActivity;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.transition.Slide;
+import android.transition.TransitionInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.android.tictactoe2.NameActivity.NameFiveBoard;
+import com.example.android.tictactoe2.NameActivity.NameThreeBoard;
 import com.example.android.tictactoe2.R;
 
 public class PlayerMode extends AppCompatActivity {
 
+    @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().getAttributes().windowAnimations = R.style.Fade;
+        setupWindowAnimations();
         setContentView(R.layout.player_mode);
         setTitle("Choose Player Mode");
+
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -27,7 +36,6 @@ public class PlayerMode extends AppCompatActivity {
 
         final Button singlePlayer = findViewById(R.id.single_player);
         Button twoPlayers = findViewById(R.id.two_players);
-        Button playOnlineWithFriends = findViewById(R.id.multiple_players);
 
 
         singlePlayer.setOnClickListener(new View.OnClickListener() {
@@ -83,22 +91,12 @@ public class PlayerMode extends AppCompatActivity {
             }
         });
 
-        playOnlineWithFriends.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(PlayerMode.this);
-                builder.setMessage("In the works, Coming Soon!");
-                builder.setTitle("Message");
-                builder.setCancelable(true);
-                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
 
-                    }
-                });
-                builder.create().show();
-            }
-        });
+    }
+
+    private void setupWindowAnimations() {
+        Slide slide = (Slide) TransitionInflater.from(this).inflateTransition(R.transition.activity_slide);
+        getWindow().setExitTransition(slide);
     }
 
 

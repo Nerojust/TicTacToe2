@@ -32,7 +32,7 @@
         android:text="@string/tic"
         android:textColor="@color/tic"
         android:textSize="@dimen/tic"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
     <TextView
         android:id="@+id/tac"
@@ -45,15 +45,14 @@
         android:text="@string/tac"
         android:textColor="@color/tac"
         android:textSize="@dimen/tac"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
     <TextView
         android:id="@+id/toe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/tac"
-        android:layout_toEndOf="@+id/tac"
-        android:layout_toRightOf="@+id/tac"
+        android:layout_toStartOf="@+id/gifImageView"
         android:text="@string/toe"
         android:textColor="@color/toe"
         android:textSize="@dimen/tic"
@@ -64,14 +63,16 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_toLeftOf="@+id/tic"
-        android:layout_toStartOf="@+id/tic"
+        android:layout_below="@+id/tic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
         android:text="@string/alc"
         android:textColor="@color/alc"
-        android:textSize="@dimen/text_size_splash_screen" />
+        android:textSize="@dimen/text_size_splash_screen"
+        tools:ignore="RtlHardcoded" />
 
     <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_alignParentEnd="true"
@@ -81,22 +82,19 @@
         android:layout_marginRight="27dp"
         android:contentDescription="@string/ladder_description"
         android:src="@drawable/ladder2"
-        tools:ignore="ContentDescription,HardcodedText" />
+        tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/toe"
-        android:layout_alignRight="@+id/toe"
-        android:layout_below="@+id/tic"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
-        android:layout_marginTop="23dp"
+        android:layout_alignStart="@+id/tic"
+        android:layout_below="@+id/textView3"
         android:fontFamily="casual"
         android:text="@string/take_a_climb_challenge"
         android:textColor="@color/take_a_climb_challenge"
         android:textSize="@dimen/text_size_splash_screen"
+        tools:ignore="RtlHardcoded"
         tools:targetApi="jelly_bean" />
 
 

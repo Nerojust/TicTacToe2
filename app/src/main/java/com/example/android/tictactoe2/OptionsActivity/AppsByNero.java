@@ -16,6 +16,7 @@ public class AppsByNero extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().getAttributes().windowAnimations = R.style.Fade;
         setContentView(R.layout.appsbynero);
         setTitle("Apps by Nerojust");
 

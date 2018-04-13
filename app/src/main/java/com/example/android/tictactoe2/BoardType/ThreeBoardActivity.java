@@ -4,9 +4,9 @@ import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,12 +21,11 @@ import com.example.android.tictactoe2.OptionsActivity.AboutUs;
 import com.example.android.tictactoe2.OptionsActivity.InstructionActivity;
 import com.example.android.tictactoe2.R;
 
-import java.util.Random;
-
 public class ThreeBoardActivity extends AppCompatActivity implements View.OnClickListener {
 
     private final Button[][] buttons = new Button[3][3];
-    String player_1, player_2;
+    private String player_1;
+    private String player_2;
     private boolean player1Turn = true;
     private int roundCount;
     private int player1Points;
@@ -40,6 +39,7 @@ public class ThreeBoardActivity extends AppCompatActivity implements View.OnClic
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.three_board);
+        getWindow().getAttributes().windowAnimations = R.style.Fade;
         setTitle("3 Board Game");
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -52,9 +52,9 @@ public class ThreeBoardActivity extends AppCompatActivity implements View.OnClic
 
         nameDetails();
 
-        Typeface player1text = Typeface.createFromAsset(getAssets(), "Roboto-Regular.ttf");
+        Typeface player1text = Typeface.createFromAsset(getAssets(), "Lato-Light.ttf");
         textViewPlayer1.setTypeface(player1text);
-        Typeface player2text = Typeface.createFromAsset(getAssets(), "Roboto-Regular.ttf");
+        Typeface player2text = Typeface.createFromAsset(getAssets(), "Lato-Light.ttf");
         textViewPlayer2.setTypeface(player2text);
 
 
@@ -158,7 +158,7 @@ public class ThreeBoardActivity extends AppCompatActivity implements View.OnClic
 
     }
 
-    public void nameDetails() {
+    private void nameDetails() {
         Intent information = getIntent();
 
         player_1 = information.getStringExtra("PLAYER_1");
@@ -181,10 +181,6 @@ public class ThreeBoardActivity extends AppCompatActivity implements View.OnClic
             }
         });
         builder.create().show();
-        YoYo.with(Techniques.BounceInUp)
-                .duration(1800)
-                .repeat(2)
-                .playOn(findViewById(R.id.three_boards));
 
         YoYo.with(Techniques.RubberBand)
                 .duration(1800)
@@ -243,10 +239,6 @@ public class ThreeBoardActivity extends AppCompatActivity implements View.OnClic
                     }
                 });
         builder.create().show();
-        YoYo.with(Techniques.BounceInUp)
-                .duration(1800)
-                .repeat(2)
-                .playOn(findViewById(R.id.three_boards));
 
         YoYo.with(Techniques.RubberBand)
                 .duration(1800)
@@ -379,6 +371,7 @@ public class ThreeBoardActivity extends AppCompatActivity implements View.OnClic
             case R.id.five_boards:
                 Intent intent = new Intent(this, FiveBoardActivity.class);
                 startActivity(intent);
+                nameDetails();
                 finish();
                 break;
             case R.id.aboutUs:

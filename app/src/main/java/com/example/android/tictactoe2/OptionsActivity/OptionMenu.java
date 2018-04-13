@@ -1,10 +1,12 @@
 package com.example.android.tictactoe2.OptionsActivity;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.transition.Fade;
+import android.transition.TransitionInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
@@ -18,19 +20,20 @@ import com.example.android.tictactoe2.R;
 
 @SuppressWarnings("ALL")
 public class OptionMenu extends AppCompatActivity {
-
+    Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setupWindowAnimations();
         setContentView(R.layout.option_menu);
         setTitle("Select Options");
+
 
         //hides the title bar when the splash screen loads
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         final Button playmode = findViewById(R.id.playMode);
-        Button premiumChallenge = findViewById(R.id.premiumChallenge);
         Button instructions = findViewById(R.id.instructionsOptionMenu);
         Button aboutUS = findViewById(R.id.aboutUsOptionMenu);
         Button otherApps = findViewById(R.id.other_apps);
@@ -38,36 +41,31 @@ public class OptionMenu extends AppCompatActivity {
         Button exit = findViewById(R.id.exitGame);
 
         YoYo.with(Techniques.RotateIn)
-                .duration(1500)
+                .duration(1300)
                 .repeat(0)
                 .playOn(findViewById(R.id.generallayout));
 
         YoYo.with(Techniques.FlipInY)
-                .duration(1600)
+                .duration(1400)
                 .repeat(1)
                 .playOn(findViewById(R.id.playMode));
 
-        YoYo.with(Techniques.Tada)
-                .duration(2200)
-                .repeat(0)
-                .playOn(findViewById(R.id.premiumChallenge));
-
         YoYo.with(Techniques.FlipInY)
-                .duration(2200)
+                .duration(1800)
                 .repeat(0)
                 .playOn(findViewById(R.id.instructionsOptionMenu));
         YoYo.with(Techniques.RotateIn)
-                .duration(2000)
+                .duration(1700)
                 .repeat(0)
                 .playOn(findViewById(R.id.other_apps));
 
         YoYo.with(Techniques.RotateIn)
-                .duration(2000)
+                .duration(1700)
                 .repeat(0)
                 .playOn(findViewById(R.id.aboutUsOptionMenu));
 
         YoYo.with(Techniques.FlipInY)
-                .duration(1900)
+                .duration(1700)
                 .repeat(0)
                 .playOn(findViewById(R.id.exitGame));
 
@@ -90,30 +88,13 @@ playmode.setOnClickListener(new View.OnClickListener() {
 });
 
 
-
         playmode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(OptionMenu.this, PlayerMode.class);
                 startActivity(intent);
-            }
-        });
 
 
-        premiumChallenge.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(OptionMenu.this);
-                builder.setMessage("Coming Soon!");
-                builder.setTitle("Message");
-                builder.setCancelable(true);
-                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-
-                    }
-                });
-                builder.create().show();
             }
         });
 
@@ -172,6 +153,12 @@ playmode.setOnClickListener(new View.OnClickListener() {
 
 
         });
+    }
+
+
+    private void setupWindowAnimations() {
+        Fade fade = (Fade) TransitionInflater.from(this).inflateTransition(R.transition.activity_fade);
+        getWindow().setEnterTransition(fade);
     }
 
 

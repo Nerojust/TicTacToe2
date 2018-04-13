@@ -12,22 +12,42 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Splashscreen.SplashScreen">
+        <activity
+            android:name=".Splashscreen.SplashScreen"
+            tools:ignore="InnerclassSeparator">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BoardType.FiveBoardActivity" />
-        <activity android:name=".BoardType.ThreeBoardActivity" />
-        <activity android:name=".OptionsActivity.OptionMenu" />
-        <activity android:name=".OptionsActivity.AboutUs" />
-        <activity android:name=".OptionsActivity.InstructionActivity" />
-        <activity android:name=".OptionsActivity.PlayerMode" />
-        <activity android:name=".OptionsActivity.NameThreeBoard"></activity>
-        <activity android:name=".OptionsActivity.AppsByNero" />
-        <activity android:name=".OptionsActivity.NameFiveBoard" />
+        <activity
+            android:name=".BoardType.FiveBoardActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".BoardType.ThreeBoardActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".OptionsActivity.OptionMenu"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".OptionsActivity.AboutUs"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".OptionsActivity.InstructionActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".OptionsActivity.PlayerMode"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".NameActivity.NameThreeBoard"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".OptionsActivity.AppsByNero"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".NameActivity.NameFiveBoard"
+            tools:ignore="InnerclassSeparator" />
     </application>
 
 </manifest>

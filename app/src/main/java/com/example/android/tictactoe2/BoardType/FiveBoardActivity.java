@@ -4,9 +4,9 @@ import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,26 +25,21 @@ import com.example.android.tictactoe2.R;
 public class FiveBoardActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button[][] buttons = new Button[3][5];
-
+    String player_1, player_2;
     private boolean player1Turn = true;
-
     private int roundCount;
-
     private int player1Points;
     private int player2Points;
     private int drawPoints;
-
     private TextView textViewPlayer1;
     private TextView textViewPlayer2;
     private TextView drawPlayers;
-
-    String player_1,player_2;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.five_board);
+        getWindow().getAttributes().windowAnimations = R.style.Fade;
         setTitle("Five Board Game");
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -183,11 +178,6 @@ nameDetails();
         });
         builder.create().show();
 
-        YoYo.with(Techniques.BounceInUp)
-                .duration(1800)
-                .repeat(1)
-                .playOn(findViewById(R.id.five_boards));
-
         YoYo.with(Techniques.RubberBand)
                 .duration(1800)
                 .repeat(0)
@@ -279,10 +269,6 @@ nameDetails();
                     }
                 });
         builder.create().show();
-        YoYo.with(Techniques.BounceInUp)
-                .duration(1800)
-                .repeat(1)
-                .playOn(findViewById(R.id.five_boards));
 
         YoYo.with(Techniques.RubberBand)
                 .duration(1800)
@@ -440,6 +426,7 @@ nameDetails();
             case R.id.three_boards:
                 Intent intent = new Intent(this, ThreeBoardActivity.class);
                 startActivity(intent);
+                nameDetails();
                 finish();
                 break;
             case R.id.five_boards:

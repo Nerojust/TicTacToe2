@@ -21,6 +21,7 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
+//        getWindow().getAttributes().windowAnimations = R.style.Fade;
 
         //hides the title bar when the splash screen loads
         getSupportActionBar().hide();
@@ -29,6 +30,7 @@ public class SplashScreen extends AppCompatActivity {
         @SuppressLint("CutPasteId") TextView tic = findViewById(R.id.tic);
         TextView tac = findViewById(R.id.tac);
         TextView toe = findViewById(R.id.toe);
+        ImageView imageViewGif = findViewById(R.id.gifImageView);
 
         Typeface ticText = Typeface.createFromAsset(getAssets(), "Roboto-Medium.ttf");
         tic.setTypeface(ticText);
@@ -36,40 +38,6 @@ public class SplashScreen extends AppCompatActivity {
         tac.setTypeface(tacText);
         Typeface toeText = Typeface.createFromAsset(getAssets(), "Roboto-Medium.ttf");
         toe.setTypeface(toeText);
-
-
-//        Effects
-//                Attension
-//        Flash, Pulse, RubberBand, Shake, Swing, Wobble, Bounce, Tada, StandUp, Wave
-//
-//        Special
-//                Hinge, RollIn, RollOut,Landing,TakingOff,DropOut
-//
-//        Bounce
-//                BounceIn, BounceInDown, BounceInLeft, BounceInRight, BounceInUp
-//
-//        Fade
-//                FadeIn, FadeInUp, FadeInDown, FadeInLeft, FadeInRight
-//
-//        FadeOut, FadeOutDown, FadeOutLeft, FadeOutRight, FadeOutUp
-//
-//        Flip
-//                FlipInX, FlipOutX, FlipOutY
-//
-//        Rotate
-//                RotateIn, RotateInDownLeft, RotateInDownRight, RotateInUpLeft, RotateInUpRight
-//
-//        RotateOut, RotateOutDownLeft, RotateOutDownRight, RotateOutUpLeft, RotateOutUpRight
-//
-//        Slide
-//                SlideInLeft, SlideInRight, SlideInUp, SlideInDown
-//
-//        SlideOutLeft, SlideOutRight, SlideOutUp, SlideOutDown
-//
-//        Zoom
-//                ZoomIn, ZoomInDown, ZoomInLeft, ZoomInRight, ZoomInUp
-//
-//        ZoomOut, ZoomOutDown, ZoomOutLeft, ZoomOutRight, ZoomOutUp
 
 
         @SuppressLint("CutPasteId") ImageView tictactoe = findViewById(R.id.tictactoe);
@@ -85,14 +53,19 @@ public class SplashScreen extends AppCompatActivity {
                 .playOn(findViewById(R.id.tic));
         @SuppressLint("CutPasteId") ImageView tac1 = findViewById(R.id.tictactoe);
         YoYo.with(Techniques.Hinge)
-                .duration(1900)
-                .repeat(2)
+                .duration(2000)
+                .repeat(1)
                 .playOn(findViewById(R.id.tac));
         @SuppressLint("CutPasteId") ImageView toe1 = findViewById(R.id.tictactoe);
         YoYo.with(Techniques.Pulse)
                 .duration(1800)
                 .repeat(2)
                 .playOn(findViewById(R.id.toe));
+
+        YoYo.with(Techniques.Pulse)
+                .duration(2200)
+                .repeat(2)
+                .playOn(findViewById(R.id.gifImageView));
 
 
 
@@ -102,7 +75,7 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
 
                 try {
-                    sleep(4000);
+                    sleep(3500);
                     Intent intent = new Intent(getApplicationContext(),OptionMenu.class);
                     startActivity(intent);
                     finish();

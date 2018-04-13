@@ -17,21 +17,21 @@
 
 
         <EditText
-            android:id="@+id/etPlayer1"
+            android:id="@+id/etPlayer2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="41dp"
-            android:hint="@string/enter_player_one_name"
+            android:hint="@string/name_playerX"
             android:inputType="textPersonName"
             android:padding="8dp"
             android:textColorHint="#a27ee1" />
 
         <EditText
-            android:id="@+id/etPlayer2"
+            android:id="@+id/etPlayer1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:hint="@string/enter_player_two_name"
+            android:layout_marginTop="41dp"
+            android:hint="@string/enter_player_o_name"
             android:inputType="textPersonName"
             android:padding="8dp"
             android:textColorHint="#a27ee1" />
