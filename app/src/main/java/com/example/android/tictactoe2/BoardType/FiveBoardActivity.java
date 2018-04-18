@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+import com.example.android.tictactoe2.NameActivity.NameThreeBoard;
 import com.example.android.tictactoe2.OptionsActivity.AboutUs;
 import com.example.android.tictactoe2.OptionsActivity.InstructionActivity;
 import com.example.android.tictactoe2.R;
@@ -424,7 +425,7 @@ nameDetails();
         }
         switch (id) {
             case R.id.three_boards:
-                Intent intent = new Intent(this, ThreeBoardActivity.class);
+                Intent intent = new Intent(this, NameThreeBoard.class);
                 startActivity(intent);
                 nameDetails();
                 finish();

@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+import com.example.android.tictactoe2.NameActivity.NameFiveBoard;
 import com.example.android.tictactoe2.OptionsActivity.AboutUs;
 import com.example.android.tictactoe2.OptionsActivity.InstructionActivity;
 import com.example.android.tictactoe2.R;
@@ -369,7 +370,7 @@ public class ThreeBoardActivity extends AppCompatActivity implements View.OnClic
             case R.id.three_boards:
                 break;
             case R.id.five_boards:
-                Intent intent = new Intent(this, FiveBoardActivity.class);
+                Intent intent = new Intent(this, NameFiveBoard.class);
                 startActivity(intent);
                 nameDetails();
                 finish();
